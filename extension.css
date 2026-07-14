@@ -772,7 +772,7 @@ body.stcs--nonDiscord .stcs--ctxBlocker > .stcs--ctxMenu {
 
 .stwii--trigger {
     top: 6px;
-    left: 400px !important;
+    left: 20px;/*400px !important;*/
     bottom: unset;
     font-size: calc(var(--mainFontSize) * 1.45) !important;
     color: var(--Drawer-iconColor) !important;
