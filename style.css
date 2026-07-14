@@ -146,7 +146,7 @@ hr {
 /* --- Headings 標題樣式 --- */
 
 /* H1 Title 一級標題 */
-h1 {
+/* h1 {
     font-size: calc(var(--mainFontSize) + 0.6rem);
     color: var(--customThemeColor);
     margin-bottom: 20px;
@@ -155,16 +155,16 @@ h1 {
     border-bottom: 3px solid var(--customThemeColor);
     line-height: 32px;
     letter-spacing: 1px;
-}
+} */
 /* H2 Title 二級標題 */
-h2 {
+/* h2 {
     font-size: calc(var(--mainFontSize) + 0.5rem);
     margin: 15px 0;
     line-height: 30px;
     letter-spacing: 1px;
-}
+} */
 /* H3 Title 三級標題 */
-h3 {
+/* h3 {
     text-align: left;
     margin-top: 5px !important;
     margin-bottom: 5px !important;
@@ -180,10 +180,10 @@ h4 {
     letter-spacing: 0.8px;
     margin-top: 10px;
     font-weight: 500;
-}
+} */
 
 /* General Title 普通標題 */
-.standoutHeader,
+ .standoutHeader,
 .title_restorable {
     margin: 15px 0;
     padding: 0;
@@ -198,16 +198,16 @@ h4 {
     border-bottom: 1.25px solid var(--SmartThemeBodyColor);
     font-weight: 600;
 
-    h3 {
+    /* h3 {
         margin: unset;
         padding-left: unset;
         border-left: unset;
-    }
+    } */
 }
 .range-block-title {
     margin: 3px 0;
     font-weight: 600;
-}
+} 
 
 /* --- Lists 列表樣式 --- */
 ol, ul:has(li) {
@@ -231,7 +231,7 @@ li {
 code {
     line-height: normal;
     background: var(--SmartThemeBlurTintColor);
-    color: var(--customThemeColor);
+    /* color: var(--customThemeColor); */
 }
 #sheld code {
     border: 0px;
@@ -239,7 +239,7 @@ code {
     letter-spacing: 0.8px;
     line-height: normal;
     background: var(--SmartThemeBlurTintColor);
-    color: var(--customThemeColor);
+    /* color: var(--customThemeColor); */
     font-size: 85%;
     padding: 0.2em 0.4em;
     margin: 0 3px;
@@ -537,13 +537,21 @@ input[type="range"] {
 /* Base Button 基礎按鈕 */
 .menu_button {
     white-space: nowrap;
-    background: color-mix(in srgb, var(--SmartThemeBodyColor) 5%, transparent) !important;
-    transition: all 0.5s ease;
+    /* background: color-mix(in srgb, var(--SmartThemeBodyColor) 5%, transparent) !important; */
+    transition: all 0.5s ease !important;
 
     &:hover {
         background: color-mix(in srgb, var(--SmartThemeBodyColor) 25%, transparent) !important;
     }
-}
+} 
+
+/* .menu_button {
+    white-space: nowrap;
+    transition: filter 0.5s ease !important;
+} */
+/* .menu_button:hover {
+    filter: brightness(1.3) !important
+} */
 .menu_button:not(.disabled):hover,
 .menu_button:not(.disabled).active {
     background: color-mix(in srgb, var(--SmartThemeBodyColor) 25%, transparent) !important;
@@ -931,8 +939,8 @@ body.movingUI ::-webkit-scrollbar-thumb:vertical {
 
     .mes {
         border: none;
-        box-shadow: none !important;
-        background-color: unset !important;
+        box-shadow: none /* !important */;
+        background-color: unset /* !important */;
         padding: 10px 0;
 
         /* General Avatar 一般頭像 */
@@ -1022,13 +1030,13 @@ body.movingUI ::-webkit-scrollbar-thumb:vertical {
 
     /* --- User Messages 使用者訊息 --- */
     .mes[is_user="true"] {
-        background-color: unset !important;
+      /*   background-color: unset !important; */
 
         .mes_block {
             background-color: var(--SmartThemeUserMesBlurTintColor) !important;
         }
     }
-
+ 
     /* --- Last Message 最後一則訊息 --- */
     .last_mes {
         margin-bottom: 10px !important;
@@ -1109,12 +1117,12 @@ body.movingUI ::-webkit-scrollbar-thumb:vertical {
     }
 
     /* Blockquote 引用文字 */
-    blockquote {
+    /*  blockquote {
         border-left: 3px solid var(--customThemeColor);
         margin: 15px 0;
         padding-left: 15px;
-        background-color: unset;
-    }
+        background-color: unset;  
+    } */
 
     /* Ordered & Unordered Lists ol 與 ul 標籤 */
     ol,
@@ -1943,14 +1951,14 @@ body.hushstyle #chat {
 
 body.ripplestyle #chat {
     .mes {
-        background: var(--SmartThemeBotMesBlurTintColor) !important;
+        /* background: var(--SmartThemeBotMesBlurTintColor); */ /* !important; */
         border-radius: 15px;
         padding: 0 !important;
         margin: 8px 0 !important;
 
-        &[is_user="true"] {
-            background-color: var(--SmartThemeUserMesBlurTintColor) !important;
-        }
+        /* &[is_user="true"] {
+            background-color: var(--SmartThemeUserMesBlurTintColor); /* !important 
+        } */
 
         .mesAvatarWrapper {
             position: sticky;
@@ -1999,9 +2007,9 @@ body.ripplestyle #chat {
         }
 
         .mes_block {
-            background: none !important;
+            /* background: none !important;
             border: none !important;
-            box-shadow: none !important;
+            box-shadow: none !important; */
             padding-top: 20px;
             padding-left: 5px;
 
@@ -2379,7 +2387,7 @@ body.ripplestyle {
 #nonQRFormItems {
     gap: 5px;
     font-size: calc(var(--mainFontSize));
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
     transition: all 0.8s ease;
     left: 0;
 
@@ -3846,4 +3854,19 @@ body.hushstyle {
 
 #ReverseProxyWarningMessage {
     color: red !important;
+}
+
+#nonQRFormItems #options_button,
+#leftSendForm > *,
+#send_but,
+#extensionsMenuButton {
+    font-size: 1.8rem !important; /* Powiększamy samą grafikę ikony */
+    width: max-content !important; /* Rozbijamy klatkę * 0.9 twórcy */
+    height: auto !important;
+    min-width: 34.5px !important; /* Robimy wygodny, wielki hitbox na myszkę */
+    min-height: 34.5px !important;
+    padding: 0px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }

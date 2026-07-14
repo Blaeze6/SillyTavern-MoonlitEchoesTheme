@@ -12,9 +12,9 @@
     > .qr--buttons {
         gap: 3px 0 !important;
 
-        &.qr--color {
+        /* &.qr--color {
             background-color: unset;
-        }
+        } */
 
         .qr--button {
             font-size: calc(var(--mainFontSize) * 0.9);
@@ -662,9 +662,9 @@ body.documentstyle .last_mes .lacommon--quickActions[data-lacommon--anchor="bott
 
 /* --- Qvink Memory 進階聊天記憶 --- */
 
-.qvink_memory_display.qvink_short_memory {
+/* .qvink_memory_display.qvink_short_memory {
     color: var(--customThemeColor2) !important;
-}
+} */
 
 body.bubblechat .qvink_memory_display {
     margin-bottom: 20px !important;
@@ -772,10 +772,15 @@ body.stcs--nonDiscord .stcs--ctxBlocker > .stcs--ctxMenu {
 
 .stwii--trigger {
     top: 6px;
-    left: 20px;
+    left: 400px !important;
     bottom: unset;
     font-size: calc(var(--mainFontSize) * 1.45) !important;
     color: var(--Drawer-iconColor) !important;
+
+    /* --- BLAEZE'S ANALOG FIX --- */
+    /* Zamykamy ikonę w twardej klatce 35x35 pikseli. Zero szans na rozlanie się na Qvink */
+    width: 35px !important;
+    height: 35px !important;
 
     @media screen and (max-width: 1000px) {
         bottom: calc(var(--formSheldHeight));
